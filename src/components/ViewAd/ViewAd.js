@@ -5,7 +5,7 @@ import "./view-ad.scss";
 import {useDispatch, useSelector} from "react-redux";
 import {addToCart} from "../../redux/cartSlice";
 import HeaderProduct from "../HeaderProduct/HeaderProduct";
-import ShareButton from "../ShareButton/ShareButton";
+// import ShareButton from "../ShareButton/ShareButton";
 import ChangeCurrency from "../ChangeCurrency/ChangeCurrency";
 import RatingStars from "../RatingStars/RatingStars";
 import ProductDetails from "./ProductDetails";
@@ -183,12 +183,12 @@ export default function ViewAd() {
                 <p>
                     <ChangeCurrency adConvertPrice={ad.price} />
                 </p>
-                <ShareButton
-                    url={window.location.href}
-                    title={ad.title}
-                    description={ad.description}
-                    round={true}
-                    size={32}/>
+                {/*<ShareButton*/}
+                {/*    url={window.location.href}*/}
+                {/*    title={ad.title}*/}
+                {/*    description={ad.description}*/}
+                {/*    round={true}*/}
+                {/*    size={32}/>*/}
                 <button className="btn" onClick={onAddToCart}>Add to cart</button>
             </div>
             <ToastContainer/>
