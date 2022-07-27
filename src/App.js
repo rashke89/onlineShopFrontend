@@ -37,7 +37,7 @@ import Category from "./adminComponents/category/Category";
 import Comments from "./adminComponents/comments/CommentsView";
 
 export const IsLoggedContext = React.createContext();
-axios.defaults.baseURL = 'http://localhost:4000';
+axios.defaults.baseURL = 'https://web-dev-online-shop.herokuapp.com/';
 axios.interceptors.request.use(function (config) {
     // Do something before request is sent
     // console.log('INT->', config);
