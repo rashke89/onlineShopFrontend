@@ -12,7 +12,7 @@ const cartSlice = createSlice({
             let newItem = Object.assign({}, action.payload);
             let foundItemIndex;
             // TODO: id -> _id
-            let foundItem = state.cart.find((item, index) => {
+            let foundItem = state?.cart?.find((item, index) => {
                 if (item._id === newItem._id) {
                     foundItemIndex = index;
                     return item;
